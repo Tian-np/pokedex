@@ -1,0 +1,18 @@
+<div class="flex flex-col justify-center items-center">
+  <form class="w-full" [formGroup]="search" (ngSubmit)="sendSearch()">
+    <div class="w-full flex justify-center h-8 gap-2">
+      <input
+        type="text"
+        class="border rounded-md border-gray-400 active:border-red-500 w-2/4"
+        placeholder="search here..."
+        formControlName="text"
+      />
+      <button
+        type="submit"
+        class="border rounded-md bg-indigo-400 border-t-indigo-600 text-white w-20"
+      >
+        Search
+      </button>
+    </div>
+  </form>
+</div>
